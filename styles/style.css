@@ -446,13 +446,23 @@ li>a {
     .facts-card-container {
         flex-direction: column;
     }
+    .second-features{
+        flex-direction: column;
+    }
+    .text-second-features{
+        width: 100%;
+
+    }
+    .images-second-features{
+        width: 100%;
+    }
     .year-second-features {
         border-radius: 8px;
         background: #FF900E;
         padding: 20px 30px;
         width: 300px;
         position: relative;
-        bottom: 170px;
-        left: 310px;
+        bottom: 130px;
+        left: 30px;
     }
 }
