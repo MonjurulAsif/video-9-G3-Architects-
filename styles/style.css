@@ -28,7 +28,8 @@
 
 header {
     background: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
+    padding: 50px 150px;
+
 }
 
 
@@ -66,9 +67,10 @@ li>a {
 }
 
 /* banner section start */
-.banner{
+.banner {
     margin-top: 80px;
 }
+
 .banner-content {
     max-width: 800px;
     text-align: center;
@@ -87,27 +89,119 @@ li>a {
     color: #727272;
     margin-bottom: 15px;
 }
-.banner img{
+
+.banner img {
     margin-top: 50px;
     width: 100%;
 }
 
+
+
+
+/* main section start */
+.maine {
+    width: 75%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* features start */
+.features {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    ;
+}
+
+.images-features {
+    width: 49.5%;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.images-features img {
+    width: 100%;
+    border-radius: 8px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    object-fit: cover;
+}
+
+.text-features {
+    width: 49.5%;
+    padding-left: 40px;
+    /* border: 2px solid red; */
+}
+
+.features-tittle {
+    color: #727272;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.span1 {
+    color: #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+.span2 {
+    color: #FF900E;
+    font-family: Work Sans;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+.features-description {
+    color:  #727272;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
 /* responsive media query */
 /* mobile devices */
-@media screen and (max-width: 576px)  {
-    header{
+@media screen and (max-width: 576px) {
+    header {
         padding: 20px;
     }
-    .nav{
+    .features{
         flex-direction: column;
+    }
+    .nav {
+        flex-direction: column;
+    }
+    .images-features{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .text-features{
+        width: 100%;
+        padding: 0;
     }
 }
-/* medium devices */
+
+/* header medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .nav{
+    .nav {
         flex-direction: column;
     }
-    header{
+
+    header {
         padding: 50px;
     }
+    .features{
+        flex-direction: column-reverse;
+    }
+    .images-features , .text-features{
+        width: 100%;
+    }
+    .text-features{
+        margin-bottom: 10px;
+    }
 }
+
